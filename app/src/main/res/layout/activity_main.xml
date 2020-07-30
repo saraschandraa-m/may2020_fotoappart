@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <io.fotoapparat.view.FocusView
+            android:id="@+id/focusview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </io.fotoapparat.view.CameraView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#75717171">
+
+
+        <ImageView
+            android:id="@+id/iv_btn_capture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_capture" />
+
+
+        <ImageView
+            android:id="@+id/iv_switch_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_change_camera" />
+
+
+        <ImageView
+            android:id="@+id/iv_preview_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_flash_on"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_flash_on"
+        android:visibility="visible" />
+
+</RelativeLayout>
